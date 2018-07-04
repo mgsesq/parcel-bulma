@@ -1,0 +1,25 @@
+{
+  "name": "UICompiler",
+  "version": "1.0.0",
+  "description": "Compiles and minifies SASS JS and runs many other tasks",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Matt Smiley <matt@contextualcode.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.contextualcode.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
