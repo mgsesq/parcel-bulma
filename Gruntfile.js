@@ -75,7 +75,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                   expand: true,                  // Enable dynamic expansion
-                    cwd: 'assets/img',                   // Src matches are relative to this path
+                    cwd: 'assets/images',                   // Src matches are relative to this path
                     src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
                     dest: 'public/img'                  // Destination path prefix
                 }]
@@ -119,7 +119,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-postcss');
 
     // Default task(s).
-    grunt.registerTask('default', ['copy', 'uglify', 'sass', 'postcss']);
+    grunt.registerTask('default', ['copy', 'uglify', 'sass', 'postcss', 'imagemin']);
     grunt.registerTask('prod', ['clean', 'copy', 'uglify', 'sass', 'postcss', 'imagemin']);
 
     grunt.registerTask('img', ['copy', 'uglify', 'sass', 'postcss', 'imagemin']);
